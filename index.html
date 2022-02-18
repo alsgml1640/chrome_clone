@@ -5,9 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>clone_chrome</title>
+    <title>Momentum</title>
   </head>
   <body>
-    <script src=""></script>
+    <header>
+      <nav id="weather">
+        <li>날씨 이미지</li>
+        <li>온도</li>
+        <li>위치</li>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 id="real-time">00:00:00</h1>
+        <form id="login-form">
+          <input required type="text" placeholder="What is your name?" />
+          <button>login</button>
+        </form>
+        <div id="greeting">Hello!</div>
+      </section>
+      <aside>
+        <form id="todo-form">
+          <input type="text" placeholder="Todo-list" autofocus />
+        </form>
+        <ul id="todo-list">
+          <li>1</li>
+          <li>2</li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <span id="quote">명언</span>
+      <span id="author">저자</span>
+    </footer>
+
+    <script>
+      const $loginForm = document.querySelector("#login-form");
+      const $loginInput = document.querySelector("#login-form input");
+      $loginForm.addEventListener("submit", () => {
+        event.preventDefault();
+        console.log($loginInput.value);
+      });
+    </script>
   </body>
 </html>
