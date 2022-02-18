@@ -2,23 +2,25 @@
 @import url(clock.css);
 @import url(todo.css);
 @import url(quotes.css);
+@import url(weather.css);
 
 body {
+  color: rgba(255, 255, 255, 0.9);
   /* width: 100%; */
-  height: 85vh;
+  height: 88vh;
 }
 
 header {
   padding-right: 10px;
-  border: 1px solid black;
-  height: 10%;
+  /* border: 1px solid black; */
+  height: 12%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 main {
-  height: 80%;
-  border: 1px solid black;
+  height: 78%;
+  /* border: 1px solid black; */
   display: flex;
   /* flex-wrap: wrap; */
   padding: 20px;
@@ -26,12 +28,12 @@ main {
 }
 
 main section {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 60%;
 }
 aside {
   width: 30%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px;
   margin: 10px;
 }
@@ -40,16 +42,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 
 footer span {
-  border: 1px solid black;
-  margin: 2px;
-}
-
-#weather {
-  display: flex;
-  border: 1px solid black;
-  padding: 10px;
+  /* border: 1px solid black; */
+  margin: 5px;
 }
