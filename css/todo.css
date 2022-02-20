@@ -11,6 +11,7 @@
   margin-bottom: 10px;
   border: none;
   border-bottom: 1px solid gray;
+  background: none;
 }
 
 #todo-list {
@@ -18,7 +19,6 @@
   height: 85%;
   /* border: 1px solid black; */
   font-size: 22px;
-  background-color: aliceblue;
 }
 
 #todo-list li {

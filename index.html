@@ -5,41 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/23f15edc1f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Momentum</title>
   </head>
   <body>
-    <header>
-      <nav id="weather">
-        <li>날씨 이미지</li>
-        <li>온도</li>
-        <li>위치</li>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1 id="real-time">00:00:00</h1>
-        <form id="login-form">
-          <input required type="text" placeholder="What is your name?" />
-          <button>login</button>
-        </form>
-        <div id="greeting">Hello!</div>
-      </section>
-      <aside>
-        <form id="todo-form">
-          <input type="text" placeholder="Todo-list" autofocus />
-        </form>
-        <ul id="todo-list">
-          <li>1</li>
-          <li>2</li>
-        </ul>
-      </aside>
-    </main>
-    <footer>
-      <span id="quote">명언</span>
-      <span id="author">저자</span>
-    </footer>
+    <div id="login_div">
+      <form id="login-form">
+        <input required type="text" placeholder="What is your name?" />
+      </form>
+    </div>
+
+    <div class="display display-none">
+      <header>
+        <nav id="logout">
+          <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+          <span>logout</span>
+        </nav>
+        <nav id="weather">
+          <li>날씨 이미지</li>
+          <li>온도</li>
+          <li>위치</li>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h1 id="toDay">2022년 2월 19일</h1>
+          <h1 id="clock">00:00:00</h1>
+          <div id="greeting">Hello!</div>
+        </section>
+        <aside>
+          <form id="todo-form">
+            <input type="text" placeholder="Todo-list" autofocus />
+          </form>
+          <ul id="todo-list">
+            <li>1</li>
+            <li>2</li>
+          </ul>
+        </aside>
+      </main>
+      <footer>
+        <span id="quote">명언</span>
+        <span id="author">저자</span>
+      </footer>
+    </div>
 
     <script src="js/login.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>

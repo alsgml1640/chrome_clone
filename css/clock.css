@@ -1,5 +1,12 @@
-#real-time {
+#toDay {
+  /* border: 10px solid white; */
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+#clock {
   font-size: 60px;
   display: flex;
   justify-content: center;
+  /* border: 10px solid white; */
+  margin-top: 0;
 }
