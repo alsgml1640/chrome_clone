@@ -3,10 +3,10 @@
   justify-content: center;
   margin: 10px;
 }
+
 #todo-form input {
   font-size: 35px;
   width: 100%;
-  /* margin: 5px; */
   padding: 10px;
   margin-bottom: 10px;
   border: none;
@@ -15,12 +15,30 @@
 }
 
 #todo-list {
+  padding-left: 10px;
   margin: 10px;
   height: 85%;
   /* border: 1px solid black; */
-  font-size: 24px;
+  font-size: 25px;
+  overflow-y: auto;
 }
 
 #todo-list li {
-  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 95%;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+#todo-list button {
+  width: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.4s ease-in-out;
+}
+#todo-list button:hover {
+  transform: scale(1.1);
 }
