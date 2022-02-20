@@ -10,18 +10,22 @@
 
 #login-form input {
   border: none;
-  /* border-bottom: 1px solid gray; */
+  border-bottom: 1px solid gray;
   font-size: 40px;
   border-bottom: 1px solid gray;
   background: none;
-  font-style: white;
+  background: none;
+  cursor: pointer;
 }
-
-#login-form button {
-  margin-left: 10px;
-  width: 120px;
-  font-size: 24px;
+#login-form input:last-child {
   border: none;
+  margin-left: 15px;
+  /* border: 1px solid black; */
+  background: white;
+  color: black;
+  font-size: 25px;
+  border-radius: 45%;
+  width: 100px;
 }
 
 #logout {

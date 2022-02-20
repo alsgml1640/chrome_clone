@@ -15,7 +15,13 @@
   <body>
     <div id="login_div">
       <form id="login-form">
-        <input required type="text" placeholder="What is your name?" />
+        <input
+          autofocus
+          required
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input id="login-btn" type="submit" value="login" />
       </form>
     </div>
 
@@ -27,7 +33,7 @@
         </nav>
         <nav id="weather">
           <li>날씨 이미지</li>
-          <li>온도</li>
+          <!-- <li>온도</li> -->
           <li>위치</li>
         </nav>
       </header>
@@ -40,11 +46,11 @@
         </section>
         <aside>
           <form id="todo-form">
-            <input type="text" placeholder="Todo-list" autofocus />
+            <input type="text" placeholder="To do-list" autofocus />
           </form>
           <ul id="todo-list">
-            <li>1</li>
-            <li>2</li>
+            <!-- <li>1</li>
+            <li>2</li> -->
           </ul>
         </aside>
       </main>
@@ -58,5 +64,7 @@
     <script src="js/background.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

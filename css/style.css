@@ -3,11 +3,16 @@
 @import url(todo.css);
 @import url(quotes.css);
 @import url(weather.css);
+@import url(greeting.css);
 
 body {
   height: 88vh;
   /* color: rgba(255, 255, 255, 0.7); */
   color: white;
+  user-select: none;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -59,6 +64,7 @@ footer span {
 input {
   color: white;
 }
+
 input::placeholder {
   color: white;
 }

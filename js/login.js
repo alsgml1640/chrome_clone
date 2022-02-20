@@ -29,10 +29,7 @@ function handleDisplay(name) {
     $greeting.innerHTML = `Hello! ${name}`;
     $display.classList.remove("display-none");
     $loginDiv.classList.add("display-none");
-    // console.log($name);
   } else {
-    // console.log(1111);
     $display.classList.add("display-none");
-    console.log("이름 없을때");
   }
 }
